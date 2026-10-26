@@ -149,6 +149,17 @@
 @media(max-width:340px){
   #people .cesa-team-grid,#people .contributors-grid{grid-template-columns:1fr}
 }
+
+/* V13: compact subordinate five-person organizing team. */
+#people div.grid.cesa-team-grid{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:12px!important;align-items:stretch!important;}
+#people div.grid.cesa-team-grid>article.card{min-width:0!important;padding:14px 12px!important;display:flex;flex-direction:column;align-items:flex-start;}
+#people div.grid.cesa-team-grid>article.card>img.portrait{width:112px!important;max-width:100%!important;height:112px!important;aspect-ratio:1/1!important;object-fit:cover!important;object-position:center 24%;border-radius:12px!important;margin:0 0 12px!important;}
+#people div.grid.cesa-team-grid>article.card>.person-placeholder{width:112px!important;max-width:100%!important;height:112px!important;min-height:0!important;aspect-ratio:1/1!important;margin:0 0 12px!important;}
+#people div.grid.cesa-team-grid>article.card>h3{font-size:0.99rem!important;margin:0 0 7px!important;line-height:1.25!important;}
+#people div.grid.cesa-team-grid>article.card>p{font-size:0.78rem!important;line-height:1.43!important;margin:0!important;}
+@media(max-width:900px){#people div.grid.cesa-team-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;}}
+@media(max-width:580px){#people div.grid.cesa-team-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;}}
+@media(max-width:340px){#people div.grid.cesa-team-grid{grid-template-columns:1fr!important;}}
 </style>
 </head>
 <body>
